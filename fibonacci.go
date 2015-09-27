@@ -2,14 +2,14 @@ package main
 
 import "fmt"
 
-const sqncEnd = 100
+const sqncEnd = 80
 
 func fibonacci() func() int {
 	a, b := 0, 1
 	return func() int {
 		tmpA := a
 		a = b
-		b = tmpA+b
+		b = tmpA + b
 		return b
 	}
 }
