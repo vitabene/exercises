@@ -10,6 +10,18 @@ describe('FizzBuzzer', function() {
       var sequence = fbz.getSequence();
       assert.equal("FizzBuzz", sequence[14]);
     });
+    it('should return "Fizz" instead number 3', function () {
+      var sequence = fbz.getSequence();
+      assert.equal("Fizz", sequence[2]);
+    });
+    it('should return "Buzz" instead number 5', function () {
+      var sequence = fbz.getSequence();
+      assert.equal("Buzz", sequence[4]);
+    });
+    it('should return 7', function () {
+      var sequence = fbz.getSequence();
+      assert.equal(7, sequence[6]);
+    });
   });
   describe('#setFizzValue()', function (){
     it('should not set fizzValue to a string value', function () {
